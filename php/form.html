@@ -2,6 +2,12 @@
 <html>
     <head>
         <title>First PHP Post Form</title>
+
+        <style>
+            div     {
+
+            }
+        </style>
     </head>
 
     <body>
@@ -15,8 +21,13 @@
                 <option value="female">Female</option>
             </select> <br>
             Phone Number: <input type="text" id="phoneNum"><br>
-            <p id='day'>Hello</p>
-            <button type="button" onclick="daySelect()">Submit</button>
+            Birthday:
+            <div id="month">Month</div>
+            <div id="day">Day</div>
+            <div id="year">Year</div>
+            <button type="button" onclick="monthSelect();daySelect();yearSelect()">
+                Submit
+            </button>
 
             <script src="birthday.js"></script>
         </form>

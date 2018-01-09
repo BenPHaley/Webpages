@@ -1,7 +1,5 @@
-#PHP
-------------
+# Functions with Javascript
 
-##Introduction
-------------
-Basic use of *PHP* to interpret both GET and POST form methods. I plan to use
-this to validate a form, along with *Python* and *Javascript*.
+## Description
+Uses *Javascript* functions to create multiple inputs on a webpage. Uses
+external *Javascript* file linked to a *HTML* file.

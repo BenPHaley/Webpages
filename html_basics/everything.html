@@ -1,0 +1,642 @@
+<!-- Lets the browser know it is an html file
+     Newer browsers don't need this but it is good style -->
+<!DOCTYPE html>
+<!-- Hyper Text Markup Language -->
+
+<!-- tags are not case sensitive but good style uses all lowercase -->
+<!-- don't need quotes around attributes but it is good style to -->
+<!-- double quotes or single quotes, doesn't matter but be consistent -->
+
+<!-- html tag must begin and end every html document -->
+<html>
+    <!-- Container for metadata. This is data about the html document.
+         Does not get displayed on the webpage. -->
+    <head>
+        <title>Title on Tab</title>
+        <!-- This would link a css stylesheet to this html document -->
+        <link rel="stylesheet" href="mystyle.css">
+
+        <meta charset="utf-8">
+        <meta name="description" content="Learning HTML">
+        <meta name="keywords" content="The basics of HTML and some CSS">
+        <meta name="author" content="Ben Haley">
+        <!-- Sets a time, in seconds, to refresh the page -->
+        <!-- <meta http-equiv="refresh" content="30"> -->
+        <!-- This is helpful when viewers will be on computers and phones -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Defines a reference to locate other documents from.
+        <base href="file:///C:/Users/bhale/Documents/Programming/js/html_everything/everything.html" target="_blank">
+        -->
+        <style>
+            table, th, td {
+                border : 1px solid black;
+                /*
+                border-collapse : collapse;
+                */
+            }
+
+            th, td {
+                padding : 15px;
+            }
+
+            th {
+                text-align : left;
+            }
+
+            /* A single element can have multiple classes. Each separated by a space. */
+            /* For horizontal list and navigation bar */
+            ul.bar {
+                list-style-type : none;
+                margin : 0;
+                padding : 0;
+                overflow : hidden;
+                background-color : #52abff;
+            }
+
+            li.h {
+                float : left;
+            }
+
+            li.h, a#list {
+                /* display : block; */
+                color : white;
+                text-align : center;
+                padding : 10px;
+                text-decoration : none;
+            }
+
+            li.h a#list:hover {
+                background-color : black;
+            }
+        </style>
+
+    </head>
+    <!-- #52abff -->
+    <body style="background-color:burlywood">
+        <h1 style="font-size:60px;">Custom h1 to 60px</h1>
+        <h1>Biggest default text on the page (h1)</h1>
+        <h6>Smallest default text on the page (h6)</h6>
+        <p>
+            h1 to h6 are text sizes from largest to smallest.<br>
+            Only use <strong>"h#"</strong> tags to define headings, not to bold or emphasize words.<br>
+        </p>
+
+        <hr>
+        <p>This is a paragraph element. Above is an <strong>"hr"</strong> element which creates a horizontal line.</p>
+        <p>
+            White space       in
+            paragraphs is ignored.      The number of lines depends on the size of
+
+            the browser.
+        </p>
+        <p>The following is a link using an <strong>"a"</strong> tag and <strong>href=""</strong> attribute</p>
+        <a href="https://github.com/bhaley7" title="Will redirect you to www.GitHub.com">Ben Haley's GitHub Page</a>
+
+        <hr>
+        <p>
+            I am using the <strong>"br"</strong> tag to make new lines in the paragraph.<br>
+            Images use <strong>"img"</strong> tag. <strong>src=""</strong> is the file path location of the file.<br>
+            <strong>alt=""</strong> is a small description of the image if it does not load properly.<br>
+            Can assign <strong>width=""</strong> and <strong>height=""</strong> of image in pxls or %.<br>
+        </p>
+        <img src="card1.jpg" alt="Captain American Playing Card" height="200px" title="Captain America">
+        <p title="Using the title attribute on a paragraph">
+            Hover over this paragraph...<br>
+            Using the <strong>"style=''"</strong> attribute you can define CSS individually.<br>
+        </p>
+        <hr>
+        <p>The <strong>"pre"</strong> tag allows you to do all that is stated below.<br></p>
+        <pre>
+        Preserves the spaces
+
+        Preserves the line breaks
+
+        Displays in courier
+
+        Displays preformatted
+        </pre>
+        <hr>
+        <!-- Can define color with rgb(0-0255,0-255,0-255) or #rrggbb(hex) -->
+        <!-- hsl(hue, saturation, lightness) = hsl(0-360, 0-100%, 0-100%) -->
+        <!-- rgba(red, green, blue, alpha) alpha is transparancey 0 is transparent 1 is solid -->
+        <p style="color:red;">style="color:red;"</p>
+        <p style="background-color:blue;">style="background-color:blue;"</p>
+        <p style="font-family:verdana;font-size:200%;text-align:center;">
+            style="font-family:verdana;font-size:200%;text-align:center;"
+        </p>
+        <hr>
+        <h3 id="text_formatting">These are many of the text formatting elements in html</h3>
+        <b>Bold text</b><br>
+        <strong>Important text, has meaning</strong><br>
+        <i>Italic text</i><br>
+        <em>Emphasized text, also important text, has meaning</em><br>
+        <mark>Marked text</mark><br>
+        <small>Small text</small><br>
+        <del>Deleted text</del><br>
+        <ins>Inserted text</ins><br>
+        101001001<sub>2</sub> (Subscript)<br>
+        2<sup>10</sup> = 1024 (Superscript)<br>
+        <hr>
+        <q>This is a quote in quotation marks.</q>
+        <blockquote>
+            Programmers are in a race with the Universe to create bigger and <br>
+            better idiot-proof programs, while the Universe is trying to create<br>
+            bigger and better idiots.  So far the Universe is winning.
+        </blockquote>
+        - Rich Cook (Above is an example of a <strong>"blockquote"</strong>)
+
+        <p>
+            I am the president of the club <abbr title="Terrapin Development and Consulting">TerpDAC</abbr>.<br>
+            TerpDAC is an <strong>"abbr"</strong>. If you hover over it with your cursor you will see what
+            it stands for.
+        </p>
+        <hr>
+        <h3>This is an <strong>"address"</strong> tag</h3>
+        <address>
+            Written by Ben Haley<br>
+            Send mail to: bhaley7@umd.edu
+        </address>
+        <br>
+        <cite>cite</cite> defines the title of a work
+
+        <p>
+            If you want to write text backwards you can do it with the <strong>"bdo"</strong> tag.<br>
+            <bdo dir="rtl">This text will be written from right to left</bdo>
+        </p>
+
+        <p style="border:2px solid dodgerblue;font-size:130%">
+            Borders are cool!
+        </p>
+        <hr>
+        <h3>HTML Hyperlinks</h3>
+        <p>
+            The <strong>"a"</strong> tag is used to define links.<br>
+            <strong>href="url"</strong> is an attribute that specifies a destination address for the link.<br>
+            Here is a link for more about <a href="https://www.w3schools.com/html/html_links.asp">HTML links</a><br>
+            <br>
+            <strong>target=""</strong> attribute specifies where to open the linked document.<br>
+            <ul>
+                <li><i>_blank</i> - opens in a new window or tab.
+                    <a href="https://www.youtube.com/watch?time_continue=2&v=VqhELBUdYqM" target="_blank">
+                    <i>Somebody</i></a> by Bryan Adams (Opens in a new tab)
+                </li>
+                <li><i>_self</i> - opens in same tab as clicked in <em>(default)</em>.</li>
+                <li><i>_parent</i> - opens in the parent frame, where it was called.
+                    <a href="https://www.youtube.com/watch?v=IxuThNgl3YA" target="_parent">
+                        <i>Born to Run</i></a> by Bruce Springsteen (Opens in parent frame)
+                </li>
+                <li><i>_top</i> - opens in full body of the window.Breaks out of iframe
+                    <a href="https://www.youtube.com/watch?v=e9BLw4W5KU8" target="_top">
+                        <i>Heartbreak Hotel</i></a> by Elvis Presley
+                </li>
+                <li>framename - opens in named frame</li>
+            </ul>
+            <p>You can use images as links by placing them inbetween the <strong>"a"</strong> and <strong>"/a"</strong> tags.</p>
+            <p>This is a link to somewhere else on this page.</p>
+            <a href="#text_formatting">Jump to text formatting</a>
+        </p>
+        <hr>
+        <h3 id="images">Images</h3>
+        <p>
+            <img src="nothing" alt="alt shows when the src image can't be loaded, should describe image">
+            <br>
+            <img src="snowboarder.jpg" alt="Snowboarder" title="style='height:500px;width:600px;'" style="height:500px;width:600px;">
+            <br>You can adjust the size of the image using attributes <strong>height</strong> and <strong>width</strong>.<br>
+            You can also use the style attribute with height and width. The style attribute will not be overriden
+            by a CSS stylesheet.<br>
+            <img src="snowboarder.jpg" alt="Small snowboader" title="style='height:300px;width:400px;'" style="height:300px;width:400px;">
+            <br>
+            Can reference an image on the internet by stating its url.<br>
+            <img src="http://www.zastavki.com/pictures/1920x1200/2011/Sport_Girl_snowboarding_028319_.jpg"
+                 alt="Snowboarder touching their board" title="image referenced with url, found image on internet"
+                 style="height:300px;width:400px">
+            <img src="http://www.dailymars.net/wp-content/uploads/2015/06/Spider-Man_07.jpg"
+                 alt="Spiderman" title="Using style float to add text to allow more display on the right"
+                 style="float:left;height:300px;width:400px;">
+            <br>
+            <h4>Interactive picture</h4>
+            <p>
+                You can click the <i>Performing Arts Library</i> to get to the library website.<br>
+                You can also click the <i>M</i> circle to go to www.testudo.com.<br>
+            </p>
+            <img src="https://www.lib.umd.edu/binaries/content/gallery/public/mckeldin/map.png"
+                 alt="Map of the University of Maryland: College Park" title="Will be able to click parts"
+                 usemap="#campus">
+            <map name="campus">
+                <area shape="rect" coords="0,0,130,140" title="Redirection to library website" href="https://www.lib.umd.edu/mspal">
+                <area shape="circle" coords="723,332,25" title="Redirection to testudo website" href="http://testudo.umd.edu/">
+            </map>
+            <br>
+            <p>
+                Can make the background an image rather than a solid color. The image repeats if
+                if doesn't fill the screen.<br>
+                There is a <strong>picture</strong> tag that has more flexibility than the <strong>img</strong> tag.<br>
+                Can have multiple sources and the webpage will choose the one that best fits the screen browsing it.<br>
+            </p>
+        </p>
+        <hr>
+        <h3 id="tables">Tables</h3>
+        <table id="table1">
+            <!-- Caption tag must be immediately after table tag -->
+            <caption>Interest List</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Email</th>
+                <th>Favorite Candy</th>
+            </tr>
+            <tr>
+                <td>Ben</td>
+                <td>Haley</td>
+                <td>bhaley@umd.edu</td>
+                <td>100 Grand Bar</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Ruby</td>
+                <td rowspan="2">Rob</td>
+                <td>rubyrob@gmail.com</td>
+                <td rowspan="2">Reese's</td>
+            </tr>
+            <tr>
+                <td>extrarubys@gmail.com</td>
+            </tr>
+        </table>
+        <hr>
+        <h3 id="lists">Lists</h3>
+        <h4>Unordered Lists</h4>
+        <ul>
+            <li>Baseball</li>
+            <li>Swimming</li>
+            <li>Cross-Country</li>
+        </ul>
+        New list with square bullet points.<br>
+        <ul style="list-style-type:square">
+            <li>Lettuce</li>
+            <li>Chicken</li>
+            <li>Rice</li>
+        </ul>
+        <h4>Ordered Lists</h4>
+        <ol type="1">
+            <li>Get dressed</li>
+            <li>Eat breakfast</li>
+            <li>Brush teeth</li>
+        </ol>
+        <h4>Description List</h4>
+        Use <strong>dl</strong> to specify a description list.<br>
+        <strong>dt</strong> specifies a topic/term and <strong>dd</strong> specifies the description.
+        <dl>
+            <dt>Basketball</dt>
+            <dd>a game with two baskets and a orange ball</dd>
+            <dt>Baseball</dt>
+            <dd>a game with four bases and a small white/red ball</dd>
+        </dl>
+
+        <h4>Horizontal list</h4>
+        This requires a little bit of css too.<br>
+
+        <ul class="bar">
+            <li class="h"><a id="list" href="https://github.com/bhaley7">Overview</a></li>
+            <li class="h"><a id="list" href="https://github.com/bhaley7?tab=repositories">Repositories</a></li>
+            <li class="h"><a id="list" href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
+        <hr>
+        <h3 id="block_elements">Block-level Elements</h3>
+        A block-level element <em>always</em> starts on a new line and takes up the full width available.<br>
+        <div>The <strong>div</strong> element is a block-level element.</div>
+        <div>The <strong>span</strong> <span>element is an inline element</span>. It doesn't start a new line</div>
+        <hr>
+        <div>
+            <h3 id="iframes">iFrames</h3>
+            <iframe src="https://www.w3schools.com/html/html_iframe.asp" name="frame" width="600px" height="300px"></iframe>
+            <div>iframes can also be the target of links. <a href="https://www.google.com/" target="frame">Click here</a> to bring a new link into the iframe.</div>
+        </div>
+        <hr>
+        <div>
+            <h3 id="javascript">Javascript</h3>
+            <div id="looks">Using javascript in an html document requires the use of the <strong>script</strong> tags.</div>
+            <div id="demo"></div>
+            <script>
+                document.getElementById("demo").innerHTML = "This was written with javascript";
+                document.getElementById("looks").style.color = "blue";
+                document.getElementById("looks").style.border = "1px solid black";
+            </script>
+            <noscript>This will be displayed if the browser does not support javascript.</noscript>
+        </div>
+        <hr>
+        <div>
+            Best practice to use <em>Relative</em> file paths over <em>Absolute</em> because everything can be run locally.
+            <div>
+                <dl>
+                    <dt>Relative file path</dt>
+                    <dd>points to a file relative to the current page. (image in the image folder)</dd>
+                    <dt>Absolute file path</dt>
+                    <dd>this is the full url to an internet file</dd>
+                </dl>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h3 id="code">Code</h3>
+            <div>To reopen a recently closed tab you can press <kbd>Ctrl + Shift + T</kbd></div>
+            <div>The <strong>kbd</strong> tag is used to represent user input, like keyboard</div>
+            <div>
+                Here is some code using the <strong>code</strong> tag:<br>
+                <pre>
+                    <code>
+                        x = 5;
+                        y = 10;
+                        z = y % x;
+                    </code>
+                </pre>
+                This code will output <samp>z = 0</samp>. The output is in <strong>samp</strong> tags which
+                specify output from the computer.
+                <div>
+                    The <strong>var</strong> tag defines variables.<br>
+                    <var>V</var><sub>final</sub> = <var>V</var><sub>initial</sub> + <var>at</var>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h3 id="entities">Entities</h3>
+            <div>
+                Using entities I can use key characters defined by html.<br>
+                5 &lt; 10; 34 &#60; 22;<br>
+                10&nbsp;mph; I used a non-breaking space to keep 10 and mph on the same line
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h3 id="forms">Forms</h3>
+            <div>
+                The <strong>form</strong> element defines a form that is used to collect user input.
+            </div>
+            <div>
+                Forms contain form elements.
+                <form>
+                    type="text"<em>(default)</em> : <input type="text" name="name"><br>
+                    type="radio" : <input type="radio" name="feeling"> Awesome<br>
+                    type="submit" : <input type="submit" value="Submit"><br>
+                </form>
+                Each input must have a <strong>type</strong> and a <strong>name</strong> attribute.<br>
+                If the <strong>name</strong> attribute is ommitted the data in the input field will not be submitted.<br>
+                Forms have an <strong>action</strong> attribute that redirects the page when submit is clicked.<br>
+                Has the same <strong>target</strong> attribute that hyperlinks have. Can open in new tab or same tab.<br>
+                <fieldset style="width:30%;">
+                    <legend>Method attribute</legend>
+                    <strong>method</strong> attribute can be either <strong>"get"</strong> or <strong>"post"</strong>.<br>
+                    <dl>
+                        <dt>get</dt>
+                        <dd>submitted form data will be visible in the page address field, in the url <em>(default)</em></dd>
+                        <dt>post</dt>
+                        <dd>use when data is sensitive and personal. No size limitation, cannot be bookmarked.</dd>
+                    </dl>
+                </fieldset>
+                <div>
+                    Using the <strong>fieldset</strong> element, you can group similar data.
+                </div>
+                <div>
+                    Inside the <stron>fieldset</strong> element use the <strong>legend</strong> element to define a label.
+                </div>
+            </div>
+            <div>
+                <div>
+                    To create a drop-down list use the <strong>select</strong> element.
+                </div>
+                <div>
+                    <form action="everything.html">
+                        <select name="language">
+                            <option value="english" selected>English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <br><br>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <div>
+                Using <strong>size="3"</strong> attribute to <strong>select</strong><br>
+                <fieldset style="width:0;">
+                    <legend>Sports</legend>
+                    <select name="sport" size="3">
+                        <option value="baseball">Baseball</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="crosscountry">Cross-Country</option>
+                        <option value="football">Football</option>
+                        <option value="soccer">Soccer</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset style="width:0;">
+                    <legend>Multiple attribute for select</legend>
+                    <select name="cars" size="4" multiple>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </fieldset>
+            </div>
+            <div>
+                <kbd>Ctrl + click</kbd> to select multiple cars.
+            </div>
+            <div>
+                <h4 id="textarea">Text Area</h4>
+                <div>
+                    <strong>textarea</strong> element defines a multi line text input field.<br>
+                    Define size of field with <strong>rows</strong> and <strong>cols</strong>.
+                </div>
+                <div>
+                    <fieldset style="width:0;">
+                        <legend>Using attributes to define rows/cols</legend>
+                        <textarea name="message" rows="6" cols="50">rows="6" cols="50"</textarea>
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset style="width:0;">
+                        <legend>Using css to define rows/cols</legend>
+                        <textarea name="message2" style="width:400px;height:300px;">
+                            style="width:400px;height:300px;"
+                        </textarea>
+                    </fieldset>
+                </div>
+            </div>
+            <div>
+                <h4 id="button">Button</h4>
+                <div>
+                    The <strong>button</strong> element defines a clickable button.
+                </div>
+                <div>
+                    <button type="button" onclick="alert('You clicked the button!')">
+                        Alert
+                    </button>
+                </div>
+            </div>
+            <div>
+                <h4 id="datalist">Datalist</h4>
+                <div>
+                    The <strong>datalist</strong> element specifies a list of pre-defined options for an <strong>input</strong> element.<br>
+                    <form>
+                        <input list="entrees" name="entree">
+                        <datalist id="entrees">
+                            <option value="Half pound Cheese Burger">
+                            <option value="Grilled Cheese and Tomatoe soup">
+                            <option value="Salmon and Rice">
+                            <option value="Baby Back Bone Ribs">
+                        </datalist>
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
+            <div>
+                <h4 id="output">Output Element</h4>
+                <div>
+                    <fieldset>
+                        <legend>Adds and subtracts the two inputs</legend>
+                        <form oninput="out.value=parseInt(x.value)+parseInt(y.value);out2.value=parseInt(x.value)*parseInt(y.value);">
+                            x = 10<input type="range" min="0" max="20" name="x" value="10">20 <br>
+                            y = <input type="number" name="y" value="10"><br>
+                            x + y = <output name="out" for "x y"></output><br>
+                            x * y = <output name="out2" for "x y"></output><br>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+            <div>
+                <h4 id="password">Passwords</h4>
+                <div>
+                    <dl>
+                        <dl><strong>type="password"</strong></dl>
+                            <dd>defines a password field. The typed characters are displayed as bullets or astericks.</dd>
+                            <dd>User Password : <input type="password" name="password"></dd>
+                        <dl><strong>type="submit"</strong></dl>
+                            <dd>defines a buton for submitting form data to a form-handler</dd>
+                            <dd><input type="submit"></dd>
+                        <dl><strong>type="reset"</strong></dl>
+                            <dd>defines a button which resets the form to it's default setting</dd>
+                            <dd><input type="reset"></dd>
+                    </dl>
+                </div>
+            </div>
+            <div>
+                <h4 id="radio">Radio</h4>
+                Should only be able to click one bullet. After clicking "More than one apply" you should be able to check more than one.<br>
+                <form id="rad">
+                    <input type="radio" name="transport1" value="bike"> Bike<br>
+                    <input type="radio" name="transport2" value="car"> Car<br>
+                    <input type="radio" name="transport3" value="scooter"> Scooter<br>
+                    <input type="radio" name="transport4" value="ripstick"> Ripstick<br>
+                    <input type="submit">
+                    <input type="reset">
+                    <input type="submit" value="More than one apply" onclick="checkmore()">
+                </form>
+                <!-- Some javascript to change the above form into a multi input form -->
+                <script>
+                    function checkmore() {
+                        text = "<form id=\"rad\"> \n <input type=\"checkbox\" name=\"transport1\" value=\"bike\"> Bike<br>";
+                        text += " \n <input type=\"checkbox\" name=\"transport2\" value=\"car\"> Car<br>";
+                        text += " \n <input type=\"checkbox\" name=\"transport3\" value=\"scooter\"> Scooter<br>";
+                        text += " \n <input type=\"checkbox\" name=\"transport4\" value=\"ripstick\"> Ripstick<br>";
+                        text += " \n <input type=\"submit\">";
+                        text += " \n <input type=\"reset\">";
+                        text += " \n </form>";
+                        document.getElementById("rad").innerHTML = text;
+                    }
+                </script>
+            </div>
+            <div>
+                <h4 id="special">Other Input Options</h4>
+                <form>
+                    <table id="form">
+                        <tr>
+                            <td>type="color"</td>
+                            <td><input type="color" name="color"></td>
+                        </tr>
+                        <tr>
+                            <td>type="date"</td>
+                            <td><input type="date" name="birthday"></td>
+                        </tr>
+                        <tr>
+                            <td>type="datetime-local"</td>
+                            <td><input type="datetime-local" name="birth-moment"></td>
+                        </tr>
+                        <tr>
+                            <td>type="email"</td>
+                            <td><input type="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td>type="month"</td>
+                            <td><input type="month" name="month"></td>
+                        </tr>
+                        <tr>
+                            <td>type="number"</td>
+                            <td><input type="number" name="num" maxlength="5"></td>
+                        </tr>
+                        <tr>
+                            <td>type="range"</td>
+                            <td><input type="range" min="1950" max="2018" step="1" value="1984"></td>
+                        </tr>
+                        <tr>
+                            <td>type="search"</td>
+                            <td><input type="search" name="bingsearch"></td>
+                        </tr>
+                        <tr>
+                            <td>type="tel"</td>
+                            <td><input type="tel" name="cell" value="only supported by Safari 8"></td>
+                        </tr>
+                        <tr>
+                            <td>type="time"</td>
+                            <td><input type="time" name="lunch"></td>
+                        </tr>
+                        <tr>
+                            <td>type="week"</td>
+                            <td><input type="week" name="week"></td>
+                        </tr>
+                        <tr>
+                            <td>type="url"</td>
+                            <td><input type="url" name="website"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div>
+            <h3 id="attributes">From Attributes</h3>
+            <div>
+                <table>
+                    <tr>
+                        <td>Element Name</td>
+                        <td>Example</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td><strong>readonly</strong></td>
+                        <td>First Name : <input type="text" name="firstname" value="John Smith" readonly></td>
+                        <td>Can only read the value of the input element</td>
+                    </tr>
+                    <tr>
+                        <td><strong>disabled</strong></td>
+                        <td>Address : <input type="text" name="address" value="123 Bubble Ln." disabled></td>
+                        <td>Input field is disabled. Unusable and un-clickable</td>
+                    </tr>
+                    <tr>
+                        <td><strong>size=""</strong></td>
+                        <td>Phone Number : <input type="text" name="home" size="10"></td>
+                        <td>Specifies the length of the input field</td>
+                    </tr>
+                    <tr>
+                        <td><strong>maxlength=""</strong></td>
+                        <td>Phone Number : <input type="text" name="cell" maxlength="10"></td>
+                        <td>Defines the maximum number of characters a user can input</td>
+                    </tr>
+                    <tr>
+                        <td>Other</td>
+                        <td><a href="https://www.w3schools.com/html/html_form_attributes.asp">To more attributes</a></td>
+                        <td>Click the link to find more <strong>form</strong> attributes</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

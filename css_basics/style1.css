@@ -1,0 +1,75 @@
+/*
+//Basic syntax for css rules
+selector {
+    property : value;
+    property : value;
+}
+
+When using ids : #id_name
+When using classes : .class_name
+    - optional for both is element.class_name or element#id_name
+
+Commas separate multiple selectors that want the same style
+
+- External sheets are the best because they can be reused for multiple html documents
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+- Can define in the head of the html document
+    <style> css code </style>
+- In-line css
+    use style attribute -> <p style="color:blue;">
+    **In-line style has higher priority than stylesheet**
+
+
+
+ */
+
+body {
+    background-image : url("green_background.jpg");
+    background-repeat : repeat-y;
+    /* background-color : darkorange; */
+}
+
+h1 {
+    text-align : center;
+
+}
+
+.heading {
+    color : blue;
+}
+
+div.section {
+    border-width : 2px;
+    border-style : solid;
+    border-color : black;
+    border-radius : 20px;
+    width : 75%;
+}
+
+.side_bar {
+    border : 2px solid black;
+    border-radius : 20px;
+    float : right;
+    width : 20%;
+    
+}
+
+
+
+
+/*
+ Changes the default color of the link when hovered over.
+ a:link - normal state
+ a:visited - the color after clicking the link
+ a:active - when the link is activated, only for a short period of time
+
+a:hover {
+    color : red;
+    background-color : transparent;
+    text-decoration : underline;
+}
+*/
+/*
+ "id='name'" - #name
+ <p "class='name'"> - p.name
+ */

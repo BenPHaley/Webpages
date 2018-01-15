@@ -1,5 +1,6 @@
 .heading {
-    color : red;
+    color : #00ff00;
+    font-family : "arial black";
 }
 
 body {
@@ -7,6 +8,76 @@ body {
 }
 
 h1 {
+    /* Defines thickness of border */
     border-width : 5px;
+    /* Border theme */
     border-style : double;
+    /* Leaves some padding above and below */
+    /* If you want border to wrap text, 'display : inline-block' */
+    display : block;
+}
+
+.section {
+    /* text color is gray */
+    color : gray;
+    font-family : "consolas";
+    border : 5px double #00ff00;
+}
+
+ul {
+    /* Removes bullet points */
+    list-style-type : none;
+    display : block;
+    margin : 0;
+    padding : 0;
+    background-color : #00ff00;
+}
+
+/* Doesn't work at the moment */
+.side_bar {
+    position : sticky;
+}
+
+li {
+    /* One way to make a horizontal navigation bar */
+    /* Can also use 'float : left;' but makes text below tricky */
+    display : inline;
+}
+
+/* Changes the color of the button when mouse is on it */
+button:hover {
+    background-color : gray;
+}
+
+button {
+    border : none;
+    /* Mouse changes from normal mouse to clicking pointer when hovering */
+    cursor : pointer;
+    /* Makes the button larger */
+    padding : 15px 25px;
+    background-color : #00ff00;
+    /* Sets the font */
+    font-family : "arial black";
+}
+
+footer {
+    background-color : gray;
+    text-align : center;
+    padding : 10px;
+}
+
+.python, .java {
+    width : 300px;
+}
+
+#java {
+    float : left;
+    width : 48%;
+    margin : 10px;
+}
+
+#python {
+    float : right;
+    width : 48%;
+    margin : 10px;
 }

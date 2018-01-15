@@ -1,0 +1,9 @@
+body {
+    background-color : burlywood;
+}
+
+.heading {
+    color : brown;
+    border : 3px solid brown;
+    border-radius : 15px;
+}

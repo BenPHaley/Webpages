@@ -3,91 +3,106 @@
     <head>
         <title>Good Looking Website</title>
         <meta charset="utf-8">
-
-        <link rel="stylesheet" type="text/css" href="style1.css">
+        <div id="style">
+            <link rel="stylesheet" type="text/css" href="style1.css">
+        </div>
     </head>
 
     <body>
-        <h1 class="heading">Programming Languages</h1>
+        <header>
+            <h1 class="heading">Programming Languages</h1>
+        </header>
+
+        <div id="bar">
+            <nav class="side_bar">
+                <ul>
+                    <li><button onclick="style1();">Style Sheet 1</button></li>
+                    <li><button onclick="style2();">Style Sheet 2</button></li>
+                    <li><button onclick="style3();">Style Sheet 3</button></li>
+                    <li><button onclick="style4();">Style Sheet 4</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="main">
+            <section>
+                <section id="java">
+                    <h2 class="heading">Java</h2>
+                    <div class="section java">
+                        <p id="first">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java was the first programming language I learned. It is an Object-Oriented language. This
+                            means that the language is based on "objects" which contain data, in the form of fields, and
+                            code, in the form of methods. Java is also class based, the objects are instances of classes.
+                            Another cool thing about Java is its ability to run on any machine after being compiled.
+                        </p>
+                        <p id="second">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While learning Java, I was taught
+                            data structures I could use in my programs. I learned to
+                            use hash maps, linked lists, stack, queue, set, map
+                            Binary Search Trees were definitely the most difficult.
+                        </p>
+                    </div>
+                </section>
+                <section id="python python">
+                    <h2 class="heading">Python</h2>
+                    <div class="section">
+                        <p id="third">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the Fall semester of my sophomore
+                            year, I stopped playing club baseball and joined Terrapin Development and Consulting (TerpDAC).
+                            TerpDAC is a technical club that solves on campus problems through technology. To help with the
+                            project I was assigned to I learned python on my own and brought what I learned to the club meetings.
+                            I took a big role in the modification of the code and learned even more throughout the experience.
+                        </p>
+                        <p id="fourth">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project I was assigned to was installing
+                            microphones in the library to pick up the noise level on each floor. The microphones were
+                            connected to wifi and transmitted the data to a website we designed. The volume level was then
+                            decided and displayed as low, medium or high.
+                        </p>
+                    </div>
+                </section>
+            </section>
+            <div>
+                <h2 class="heading">C</h2>
+                <div class="section">
+                    <p id="fifth">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C was the third programming language I learned. I learned the language at the University of
+                        Maryland while taking <i>Introduction to Computer Systems</i>. The class was fast paced and
+                        there was little time to waste when it came to completing the numerous projects. In the
+                        beginning, I had some trouble with memory allocation. I would sometimes allot memory for
+                        objects that didn't need it. But after some practice I caught on and figured out what
+                        I was doing.
+                    </p>
+                    <p id="sizth">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My favorite project during that semester
+                        was our <bold>Small Shell</bold> project. I used the fork() system call to duplicate the
+                        process running and execute the input command. When execution of the command was complete
+                        I killed the extra process and prompted the user for input again.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h2 class="heading">OCaml</h2>
+                <div class="section">
+                    <p id="seventh">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OCaml is the fourth programming language I
+                        learned. It is the most recent language I learned and is one of my favorite. I like OCaml
+                        because many of the functions written are recursive and can do a lot with a little coding.
+                        <i>The Organization of Programming Languages</i> is the class that taught me OCaml.
+                    </p>
+                    <p id="eighth">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My favorite project during the semester
+                        was our <abbr title="Context Free Grammar">CFG</abbr> project. With OCaml we programmed
+                        a parser which interprets many of C's key words.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <!-- <q>Invent, and an inventor you will become.</q><br>-->
+            <q>Think, and thoughts will come.</q><br>
+            Copyright &copy; Ben Haley<br>
+        </footer>
         <!-- Javascript file -->
         <script src="switch_style.js"></script>
-        <div class="side_bar">
-            <ul>
-                <li><button onclick="style(1);">Style Sheet 1</button></li>
-                <li><button onclick="style(2);">Style Sheet 2</button></li>
-                <li><button onclick="style(3);">Style Sheet 3</button></li>
-                <li><button onclick="style(4);">Style Sheet 4</button></li>
-            </ul>
-        </div>
-        <div>
-            <h2 class="heading">Java</h2>
-            <div class="section">
-                <p id="first">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Java was the first programming language I learned. It is an Object-Oriented language. This
-                    means that the language is based on "objects" which contain data, in the form of fields, and
-                    code, in the form of methods. Java is also class based, the objects are instances of classes.
-                    Another cool thing about Java is its ability to run on any machine after being compiled.
-                </p>
-                <p id="second">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;While learning Java, I was taught
-                    data structures I could use in my programs. I learned to
-                    use hash maps, linked lists, stack, queue, set, map
-                    Binary Search Trees were definitely the most difficult.
-                </p>
-            </div>
-        </div>
-        <div>
-            <h2 class="heading">Python</h2>
-            <div class="section">
-                <p id="third">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;During the Fall semester of my sophomore
-                    year, I stopped playing club baseball and joined Terrapin Development and Consulting (TerpDAC).
-                    TerpDAC is a technical club that solves on campus problems through technology. To help with the
-                    project I was assigned to I learned python on my own and brought what I learned to the club meetings.
-                    I took a big role in the modification of the code and learned even more throughout the experience.
-                </p>
-                <p id="fourth">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The project I was assigned to was installing
-                    microphones in the library to pick up the noise level on each floor. The microphones were
-                    connected to wifi and transmitted the data to a website we designed. The volume level was then
-                    decided and displayed as low, medium or high.
-                </p>
-            </div>
-        </div>
-        <div>
-            <h2 class="heading">C</h2>
-            <div class="section">
-                <p id="fifth">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C was the third programming language I learned. I learned the language at the University of
-                    Maryland while taking <i>Introduction to Computer Systems</i>. The class was fast paced and
-                    there was little time to waste when it came to completing the numerous projects. In the
-                    beginning, I had some trouble with memory allocation. I would sometimes allot memory for
-                    objects that didn't need it. But after some practice I caught on and figured out what
-                    I was doing.
-                </p>
-                <p id="sizth">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My favorite project during that semester
-                    was our <bold>Small Shell</bold> project. I used the fork() system call to duplicate the
-                    process running and execute the input command. When execution of the command was complete
-                    I killed the extra process and prompted the user for input again.
-                </p>
-            </div>
-        </div>
-        <div>
-            <h2 class="heading">OCaml</h2>
-            <div class="section">
-                <p id="seventh">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OCaml is the fourth programming language I
-                    learned. It is the most recent language I learned and is one of my favorite. I like OCaml
-                    because many of the functions written are recursive and can do a lot with a little coding.
-                    <i>The Organization of Programming Languages</i> is the class that taught me OCaml.
-                </p>
-                <p id="eighth">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My favorite project during the semester
-                    was our <abbr title="Context Free Grammar">CFG</abbr> project. With OCaml we programmed
-                    a parser which interprets many of C's key words.
-                </p>
-            </div>
-        </div>
     </body>
 </html>

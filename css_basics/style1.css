@@ -38,6 +38,10 @@ h1 {
     color : blue;
 }
 
+#main {
+    margin-left : 25%;
+}
+
 div.section {
     border-width : 2px;
     border-style : solid;
@@ -49,11 +53,24 @@ div.section {
 .side_bar {
     border : 2px solid black;
     border-radius : 20px;
-    float : right;
+    float : left;
     width : 20%;
-    
 }
 
+p {
+    padding : 5px;
+}
+
+footer {
+    color : white;
+    background-color : black;
+    text-align : center;
+
+    width : 100%;
+    margin : 0;
+    position : absolute;
+    height : 60px;
+}
 
 
 

@@ -7,6 +7,10 @@ function daySelect() {
     document.getElementById('day').innerHTML = text;
 }
 */
+function param (x) {
+    document.getElementById("sub").innerHTML = x+5;
+}
+
 
 function monthSelect() {
     var text = "<p float=\"left\">Month:</p>\n<select name=\"month\">\n<option value=\"none\"></option>\n";
